@@ -1,0 +1,11 @@
+@import "color";
+@import "typography";
+
+
+header {
+    padding: 30px 0 0 0;
+    
+    .centralizer {
+        letter-spacing: -3.5px;
+    }
+}
