@@ -1,0 +1,16 @@
+.footer-last {
+    background-color: #5aac38;
+    border-top: 2px solid #7bbd60;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 11px;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+
+        &:hover{
+            color: #fff200;
+        }
+    }
+}

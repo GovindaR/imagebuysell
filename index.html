@@ -3,41 +3,1087 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Imagebuysell</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="owl/owl.carousel.min.css">
+        <!-- <link rel="stylesheet" href="owl/owl.theme.default.min.css"> -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
+<!-- header -->
         <header>
-            <div class="centralizer">
+            <div class="centralizer clearfix">
                 <a href="index.php" class="logo">ImageBuySell</a>
+
+                <!-- form header element -->
+
+
+                <form action="all-posts.php" method="post" class="main-search">
+                       <ul>
+                           <li>
+                                <input type="text" id="city" value="Select city" size="10" readonly="readonly">
+                                <div class="cities">
+                                   <div class="centralizer">
+                                       <div>
+                                        <h2>Eastern region</h2>
+                                        <h3>Mechi</h3>
+                                        <a href="#">Ilam</a>, <a href="#">Jhapa</a>, <a href="#" >Panchthar</a><br>
+                                        <a href="#" >Taplejung</a>
+                                        <h3>Koshi</h3>
+                                        <a href="#">Bhojpur</a>, <a href="#">Dhankuta</a>, <a href="#">Morang</a><br>
+                                        <a href="#" >Sankhuwasabha</a>, <a href="#">Sunsari</a><br>
+                                        <a href="#">Terhathum</a>
+                                        <h3>Sagarmatha</h3>
+                                        <a href="#">Khotang</a>, <a href="#">Okhaldhunga</a><br>
+                                        <a href="#">Saptari</a>, <a href="#">Siraha</a>, <a href="#">Solukhumbu</a><br>
+                                        <a href="#">Udayapur</a>
+                                       </div>
+                                       <div>
+                                        <h2>Central region</h2>
+                                        
+                                        <h3>Bagmati</h3>
+                                        <a href="#">Bhaktapur</a>,
+                                        <a href="#">Dhading</a><br>
+                                        <a href="#">Kathmandu</a>,
+                                        <a href="#">Kavrepalanchok</a><br>
+                                        <a href="#">Lalitpur</a>,
+                                        <a href="#">Nuwakot</a><br>
+                                        <a href="#">Rasuwa</a>,
+                                        <a href="#">Sindhupalchok</a>
+                                        
+                                        <h3>Narayani</h3>
+                                        <a href="#">Bara</a>,
+                                        <a href="#">Chitwan</a>,
+                                        <a href="#">Makwanpur</a><br>
+                                        <a href="#">Parsa</a>,
+                                        <a href="#">Rautahat</a>
+                                        
+                                        <h3>Janakpur</h3>
+                                        <a href="#">Dhanusa</a>,
+                                        <a href="#">Dolakha</a>,
+                                        <a href="#">Mahottari</a><br>
+                                        <a href="#">Ramechhap</a>,
+                                        <a href="#">Sarlahi</a>,
+                                        <a href="#">Sindhuli</a>
+                                    </div>
+                                    <div>
+                                        <h2>Western region</h2>
+                                        
+                                        <h3>Dhawalagiri</h3>
+                                        <a href="#">Baglung</a>,
+                                        <a href="#">Mustang</a><br>
+                                        <a href="#">Myagdi</a>,
+                                        <a href="#">Parbat</a>
+                                        
+                                        <h3>Gandaki</h3>
+                                        <a href="#">Gorkha</a>,
+                                        <a href="#">Kaski</a>,
+                                        <a href="#">Lamjung</a><br>
+                                        <a href="#">Manang</a>, 
+                                        <a href="#">Syanga</a>,
+                                        <a href="#">Tanahu</a>
+                                        
+                                        <h3>Lumbini</h3>
+                                        <a href="#">Arghakhanchi</a>,
+                                        <a href="#">Gulmi</a><br>
+                                        <a href="#">Kapilvastu</a>,
+                                        <a href="#">Nawalparasi</a><br>
+                                        <a href="#">Palpa</a>,
+                                        <a href="#">Rupandehi</a> 
+                                    </div>
+                                    <div>
+                                        <h2>Mid-Western<br>region</h2>
+                                        
+                                        <h3>Karnali</h3>
+                                        <a href="#">Dolpa</a>,
+                                        <a href="#">Humla</a>,
+                                        <a href="#">Jumla</a><br>
+                                        <a href="#">Kalikot</a>,
+                                        <a href="#">Mugu</a> 
+                                        
+                                        <h3>Bheri</h3>
+                                        <a href="#">Banke</a>, 
+                                        <a href="#">Bardiya</a>,
+                                        <a href="#">Dailekh</a><br>
+                                        <a href="#">Jajarkot</a>,
+                                        <a href="#">Surkhet</a> 
+                                        
+                                        <h3>Rapti</h3>
+                                        <a href="#">Dang</a>,
+                                        <a href="#">Pyuthan</a>,
+                                        <a href="#">Rolpa</a><br>
+                                        <a href="#">Rukum</a>,
+                                        <a href="#">Salyan</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h2>Far-Western<br>region</h2>
+                                        
+                                        <h3>Mahakali</h3>
+                                        <a href="#">Baitadi</a>,
+                                        <a href="#">Dadeldhura</a><br>
+                                        <a href="#">Darchula</a>,
+                                        <a href="#">Kanchanpur</a>
+                                        
+                                        <h3>Seti</h3>
+                                        <a href="#">Achham</a>,
+                                        <a href="#">Bajhang</a><br>
+                                        <a href="#">Bajura</a>,
+                                        <a href="#">Doti</a>,
+                                        <a href="#">Kailali</a>
+                                        
+                                    </div>
+                                   </div>
+                                </div>
+                           </li>
+                       </ul>
+                       <input type="text" placeholder="What are you searching for ..." class="placeholder main-searchbox">
+                       <input type="submit" value="">
+                </form>
+                <div class="view-post">
+                    <a href="all-posts.php"><img src="img/icon-view-all-post.png" alt="View all posts">&nbsp;View all posts</a>
+                    <a href="post-ad.php"><img src="img/icon-post-free-ad-large.png" alt="Post free ad">Post free ad</a>
+                </div>
+                <nav>
+                    <ul class="menubar">
+                        <li class="active-menu">
+                            <a href="index.php">
+                                <img src="img/icon-home-menubar.png" alt="Home"
+                                ></a>
+                        </li>
+                        <li class="have-child how-it-works">
+                            <a href="#">How it works</a>
+                            <div>
+                                <div>
+                                    <span>1</span>
+                                    <h2>Search &amp; add items for free</h2>
+                                    <p>
+                                            Whether you have new or used
+                                            <br>
+                                            goods, you can buy, sell or
+                                            <br>
+                                            exchange via
+                                            <br>
+                                            imagebuysell.com. just 
+                                            <a href="login.php">Login</a>
+                                            <br>
+                                            and post your goods.                        
+                                    </p>
+                                </div>
+                                <div>
+                                    <span>2</span>
+                                    <h2>Contact the seller</h2>
+                                    <p>
+                                    Review the product details &amp;<br>pricing. Ask any questions,<br>or make your best offer to<br>the seller through the<br>provided <strong>contact medium</strong>.                        </p>
+                                </div>
+                                <div>
+                                    <span>3</span>
+                                    <h2>Finalize the deal</h2>
+                                    <p>
+                                    You and the seller can<br>determine how, when, &amp;<br>where payment will be<br>made. <strong>No hidden costs<br> or any fees</strong>.</p>
+                                 </div>
+                                <aside>
+                                    Click one of these<br>buttons to use<br>this service.
+                                </aside>
+                            </div>
+                        </li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
+                        <li class="categories-menu have-child">
+                            <a href="#">
+                                Categories
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Services</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Advertising-Design</a>
+                                        <a href="#">Airline - Train - Bus Tickets</a>
+                                        <a href="#">Astrology</a>
+                                        <a href="#">Business Offers</a>
+                                        <a href="#">Car Rentals - Taxi Services</a>
+                                        <a href="#">Carpenters</a>
+                                        <a href="#">Catering Services</a>
+                                        <a href="#">Computer - Web Services</a>
+                                        <a href="#">Cooks</a>
+                                        <a href="#">Courier Services</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="#">Drivers</a>
+                                        <a href="#">Electronics Repair</a>
+                                        <a href="#">Event -Party Planners - DJ</a>
+                                        <a href="#">Health - Fitness</a>
+                                        <a href="#">Hotels - Resorts</a>
+                                        <a href="#">Household Renovation</a>
+                                        <a href="#">Interior Designers</a>
+                                        <a href="#">Lawyers - Advocates</a>
+                                        <a href="#">Loans - Insurance</a>
+                                        <a href="#">Maids &amp; Housekeeping</a>
+                                     </li>
+                                    <li>
+                                        <a href="#">Parlours and Salons</a>
+                                        <a href="#">Recruitment Agencies</a>
+                                        <a href="#">Plumbers - Electricians</a>
+                                        <a href="#">Restaurants - Coffee Shops</a>
+                                        <a href="#">Retails</a>
+                                        <a href="#">Taxation - Audit</a>
+                                        <a href="#">Travel Agents</a>
+                                        <a href="#">Everything Else</a>
+                                     </li>
+                                </ul>
+                                </li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">For sale</a></li>
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Housing</a></li>
+                                <li><a href="#">Cars/Vehicles</a></li>
+                                <li><a href="#">Bikes</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Pets</a></li>
+                                <li><a href="#">Free Stuffs</a></li>
+                            </ul>
+                        </li>
+                        <li class="have-child how-it-works wanted">
+                            <a href="wanted.php"><strong>Wanted</strong></a>
+                            <div>
+                                <div>
+                                    <h2>Get to know what others looking for</h2>
+                                    <p>
+                                        Check this section to know specific needs of other users. You may be able to provide if the items you've matched with their requirements.
+                                    </p>
+                                    <p><a href="wanted.php" class="btn btn-green">View wanted</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right-menu logout-menu">
+                           <a href="#">Logout</a>
+                        </li>
+                        <li class="right-menu register-menu">
+                            <a href="register.php">Register</a>
+                        </li>
+                        <li class="have-child right-menu login-menu">
+                            <a href="login.php">Login</a>
+                            <form action="#" method="post">
+                                <div>
+                                    <small>Wrong username or password.</small>
+                                    <input type="text" class="placeholder" placeholder="Username" required>
+                                    <input  type="Password" class="placeholder" placeholder="Password" required>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Keep me logged in.
+                                    </label>
+                                </div>
+                                <p>
+                                    »&nbsp; <a href="login.php">Forgot your password?</a><br>
+                                    »&nbsp; <a href="register.php">New member signup</a>
+                                </p>
+                                <span>
+                                    <input type="submit" value="SUBMIT">
+                                </span>
+                            </form>
+                        </li>
+                        <li class="have-child right-menu login-menu logged-in">
+                            <a href="#">Name Surname</a>
+                            <form action="#" method="post">
+                                <div>
+                                    <span>
+                                        <u>Member since</u>
+                                        <strong>24/11/2012</strong>
+                                    </span>
+                                </div>
+                                <ins>
+                                    »&nbsp; <a href="my-ads.php">My ads</a><br>
+                                    »&nbsp; <a href="favorite-ads.php">Favorite ads</a><br>
+                                    »&nbsp; <a href="post-ad.php">Post an ad</a><br>
+                                    »&nbsp; <a href="wanted-member.php">I'm looking for</a>
+                                </ins>
+                                <p>
+                                    »&nbsp; <a href="#">Edit profile</a><br>
+                                    »&nbsp; <a href="#">Change password</a>
+                                </p>
+                                <span>
+                                    <!--<input name="" type="submit" value="LOGOUT">-->
+                                    <a href="#">Logout</a>
+                                </span>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
+<!-- section -->
+        <section>
 
-        
+            <!-- Home highlights start -->
+            <div class="home-highlights clearfix">
+                <div class="latest-additions">
+                    <h3>
+                        <span>Latest additions</span>
+                        <a href="#">View all</a>
+                    </h3>
+                    <div class="jcarousel-skin-tango ">
+                        <div class="jcarousel-clip-horizontal">
+                            <div class="owl-carousel owl-theme loaded1-carousel">
+                                <div class="jcarousel-item">
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="#">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item4.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item5.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                </div>
+                                <div class="jcarousel-item">
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="#">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item4.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item5.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                </div>
+                                <div class="jcarousel-item">
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="#">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item4.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item5.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item1.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-items">
+                    <h3>
+                        <span>Featured items</span>
+                        <a href="#">View all</a>
+                    </h3>
+                    <div class="jcarousel-skin-tango">
+                        <div class="jcarousel-clip-horizontal">
+                            <div class="owl-carousel owl-theme loaded2-carousel">
+                                <div class="jcarousel-item">
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/featured-main-item.png" alt="Featured">
+                                            <span>
+                                                Luxurious Bunglow at the heart<br>of the capital
+                                                <strong>NRS. 5,20,00,000/-</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item2.png" alt="Latest">
+                                            <span>NRS. 4,800/-</span>
+                                        </a>
+                                        <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item3.png" alt="Latest">
+                                            <span>NRS. 14,000/-</span>
+                                        </a>
+                                        <a href="details.php">German Shepherd Pups On Sell</a> 
+                                    </div>
+                                    <div>
+                                        <a href="details.php">
+                                            <img src="img/temp/latest-item4.png" alt="Latest">
+                                            <span>NRS. 3,25,000 /-</span>
+                                        </a>
+                                        <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                    </div>
+                                </div>
+                                <div class="jcarousel-item">
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/featured-main-item.png" alt="Featured">
+                                                <span>
+                                                    Luxurious Bunglow at the heart<br>of the capital
+                                                    <strong>NRS. 5,20,00,000/-</strong>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item2.png" alt="Latest">
+                                                <span>NRS. 4,800/-</span>
+                                            </a>
+                                            <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item3.png" alt="Latest">
+                                                <span>NRS. 14,000/-</span>
+                                            </a>
+                                            <a href="details.php">German Shepherd Pups On Sell</a> 
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item4.png" alt="Latest">
+                                                <span>NRS. 3,25,000 /-</span>
+                                            </a>
+                                            <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                        </div>
+                                </div>
+                                <div class="jcarousel-item">
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/featured-main-item.png" alt="Featured">
+                                                <span>
+                                                    Luxurious Bunglow at the heart<br>of the capital
+                                                    <strong>NRS. 5,20,00,000/-</strong>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item2.png" alt="Latest">
+                                                <span>NRS. 4,800/-</span>
+                                            </a>
+                                            <a href="details.php">Pokhara Tour (2 Nights/3 Days Package) </a> 
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item3.png" alt="Latest">
+                                                <span>NRS. 14,000/-</span>
+                                            </a>
+                                            <a href="details.php">German Shepherd Pups On Sell</a> 
+                                        </div>
+                                        <div>
+                                            <a href="details.php">
+                                                <img src="img/temp/latest-item4.png" alt="Latest">
+                                                <span>NRS. 3,25,000 /-</span>
+                                            </a>
+                                            <a href="details.php">15 Kva Mahindra Powerol Diesel Generator</a> 
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Home highlights end -->
+
+            <!-- Cities start -->
+            <div id="cities" class="cities cities1">
+                <div class="centralizer">
+                    <div>
+                        <h2>Eastern region</h2>
+                        
+                        <h3>Mechi</h3>
+                        <a href="#">Ilam</a>,
+                        <a href="#">Jhapa</a>, 
+                        <a href="#">Panchthar</a><br>
+                        <a href="#">Taplejung</a>
+                        
+                        <h3>Koshi</h3>
+                        <a href="#">Bhojpur</a>,
+                        <a href="#">Dhankuta</a>,
+                        <a href="#">Morang</a><br>
+                        <a href="#">Sankhuwasabha</a>,
+                        <a href="#">Sunsari</a><br>
+                        <a href="#">Terhathum</a>
+                        
+                        <h3>Sagarmatha</h3>
+                        <a href="#">Khotang</a>,
+                        <a href="#">Okhaldhunga</a><br>
+                        <a href="#">Saptari</a>,
+                        <a href="#">Siraha</a>,
+                        <a href="#">Solukhumbu</a><br>
+                        <a href="#">Udayapur</a>
+                    </div>
+                    <div>
+                        <h2>Central region</h2>
+                        
+                        <h3>Bagmati</h3>
+                        <a href="#">Bhaktapur</a>,
+                        <a href="#">Dhading</a><br>
+                        <a href="#">Kathmandu</a>,
+                        <a href="#">Kavrepalanchok</a><br>
+                        <a href="#">Lalitpur</a>,
+                        <a href="#">Nuwakot</a><br>
+                        <a href="#">Rasuwa</a>,
+                        <a href="#">Sindhupalchok</a>
+                        
+                        <h3>Narayani</h3>
+                        <a href="#">Bara</a>,
+                        <a href="#">Chitwan</a>,
+                        <a href="#">Makwanpur</a><br>
+                        <a href="#">Parsa</a>,
+                        <a href="#">Rautahat</a>
+                        
+                        <h3>Janakpur</h3>
+                        <a href="#">Dhanusa</a>,
+                        <a href="#">Dolakha</a>,
+                        <a href="#">Mahottari</a><br>
+                        <a href="#">Ramechhap</a>,
+                        <a href="#">Sarlahi</a>,
+                        <a href="#">Sindhuli</a>
+                    </div>
+                    <div>
+                        <h2>Western region</h2>
+                        
+                        <h3>Dhawalagiri</h3>
+                        <a href="#">Baglung</a>,
+                        <a href="#">Mustang</a><br>
+                        <a href="#">Myagdi</a>,
+                        <a href="#">Parbat</a>
+                        
+                        <h3>Gandaki</h3>
+                        <a href="#">Gorkha</a>,
+                        <a href="#">Kaski</a>,
+                        <a href="#">Lamjung</a><br>
+                        <a href="#">Manang</a>, 
+                        <a href="#">Syanga</a>,
+                        <a href="#">Tanahu</a>
+                        
+                        <h3>Lumbini</h3>
+                        <a href="#">Arghakhanchi</a>,
+                        <a href="#">Gulmi</a><br>
+                        <a href="#">Kapilvastu</a>,
+                        <a href="#">Nawalparasi</a><br>
+                        <a href="#">Palpa</a>,
+                        <a href="#">Rupandehi</a> 
+                    </div>
+                    <div>
+                        <h2>Mid-Western<br>region</h2>
+                        
+                        <h3>Karnali</h3>
+                        <a href="#">Dolpa</a>,
+                        <a href="#">Humla</a>,
+                        <a href="#">Jumla</a><br>
+                        <a href="#">Kalikot</a>,
+                        <a href="#">Mugu</a> 
+                        
+                        <h3>Bheri</h3>
+                        <a href="#">Banke</a>,
+                        <a href="#">Bardiya</a>,
+                        <a href="#">Dailekh</a><br>
+                        <a href="#">Jajarkot</a>,
+                        <a href="#">Surkhet</a> 
+                        
+                        <h3>Rapti</h3>
+                        <a href="#">Dang</a>,
+                        <a href="#">Pyuthan</a>,
+                        <a href="#">Rolpa</a><br>
+                        <a href="#">Rukum</a>,
+                        <a href="#">Salyan</a>
+                        
+                    </div>
+                    <div>
+                        <h2>Far-Western<br>region</h2>
+                        
+                        <h3>Mahakali</h3>
+                        <a href="#">Baitadi</a>,
+                        <a href="#">Dadeldhura</a><br>
+                        <a href="#">Darchula</a>,
+                        <a href="#">Kanchanpur</a>
+                        
+                        <h3>Seti</h3>
+                        <a href="#">Achham</a>,
+                        <a href="#">Bajhang</a><br>
+                        <a href="#">Bajura</a>,
+                        <a href="#">Doti</a>,
+                        <a href="#">Kailali</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cities end -->
+
+            <!-- Categories start -->
+
+            <div class="categories">
+                <div class="centralizer">
+                    <a href="javascript:;" id="cities-btn">
+                    </a>
+                    <h2>CATEGORIES</h2>
+                    <div style="margin-left:0;">
+                        <h3><img src="img/icon-services-categories.png" alt="Services">Services</h3>
+                        <a href="#">Advertising - Design</a>
+                        <a href="#">Airline - Train - Bus Tickets</a>
+                        <a href="#">Astrology</a>
+                        <a href="#">Business Offers</a>
+                        <a href="#">Car Rentals - Taxi Services</a>
+                        <a href="#">Carpenters</a>
+                        <a href="#">Catering Services</a>
+                        <a href="#">Computer - Web Services</a>
+                        <a href="#">Cooks</a>
+                        <a href="#">Courier Services</a>
+                        <a href="#">Drivers</a>
+                        <a href="#">Electronics Repair</a>
+                        <a href="#">Event -Party Planners - DJ</a>
+                        <a href="#">Health - Fitness</a>
+                        <a href="#">Hotels - Resorts</a>
+                        <a href="#">Household Renovation</a>
+                        <a href="#">Interior Designers</a>
+                        <a href="#">Lawyers - Advocates</a>
+                        <a href="#">Loans - Insurance</a>
+                        <a href="#">Maids &amp; Housekeeping</a>
+                        <a href="#">Parlours and Salons</a>
+                        <a href="#">Recruitment Agencies</a>
+                        <a href="#">Plumbers - Electricians</a>
+                        <a href="#">Restaurants - Coffee Shops</a>
+                        <a href="#">Retails</a>
+                        <a href="#">Taxation - Audit</a>
+                        <a href="#">Travel Agents</a>
+                        <a href="#">Everything Else</a>
+                    </div>
+                    <div>
+                        <h3><img src="img/icon-jobs-categories.png" alt="Jobs">Jobs</h3> 
+                        <a href="#">Accounting - Tax - Audit</a>
+                        <a href="#">Advertising - Media - PR</a>
+                        <a href="#">Airline - Travel</a>
+                        <a href="#">Architects - Interior</a>
+                        <a href="#">Designers</a>
+                        <a href="#">Banking - Finance - Insurance</a>
+                        <a href="#">Catering - Hospitality</a>
+                        <a href="#">Content Writers - Translators</a>
+                        <a href="#">Customer Service</a>
+                        <a href="#">Education - Teaching</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">Freelancers</a>
+                        <a href="#">Healthcare - Medicine</a>
+                        <a href="#">Human Resource (HR)</a>
+                        <a href="#">Internet - Web Designers</a>
+                        <a href="#">IT Hardware</a>
+                        <a href="#">IT Software</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">Non Profit - NGO</a>
+                        <a href="#">Part Time - Temps</a>
+                        <a href="#">Real Estate - Construction</a>
+                        <a href="#">Retail</a>
+                        <a href="#">Sales</a>
+                        <a href="#">Secretarial - Office Staff</a>
+                        <a href="#">Other Jobs</a>                
+                    </div>
+                    <div>
+                        <h3><img src="img/icon-forsale-categories.png" alt="For sale">For sale</h3>
+                        <a href="#">Antiques</a> 
+                        <a href="#">Appliances</a> 
+                        <a href="#">Arts &amp; crafts</a> 
+                        <a href="#">Baby &amp; kid stuff</a> 
+                        <a href="#">Bicycles</a> 
+                        <a href="#">Books &amp; magazines</a> 
+                        <a href="#">Clothing &amp; accessories</a> 
+                        <a href="#">Computers &amp; tech</a> 
+                        <a href="#">Farm equipment</a> 
+                        <a href="#">Furniture, Outdoor</a> 
+                        <a href="#">Health &amp; beauty</a> 
+                        <a href="#">Jewelry &amp; watches</a> 
+                        <a href="#">Musical instruments</a> 
+                        <a href="#">Sporting goods</a> 
+                        <a href="#">Tickets</a> 
+                        <a href="#">Everything Else</a> 
+                        <a href="#">Toys &amp; games</a> 
+                        <a href="#">Video gaming</a> 
+                        <a href="#">Everything else</a>
+                         
+                        <h3><img src="img/icon-mobiles-categories.png" alt="Mobiles">Mobiles</h3> 
+                        <a href="#">iPhone</a>
+                        <a href="#">iPad/Tablets</a>
+                        <a href="#">Samsung</a>
+                        <a href="#">Nokia</a>
+                        <a href="#">Other phones</a>
+                        <a href="#">LG</a>
+                        <a href="#">Blackberry</a>
+                        <a href="#">Sony/Ericsson</a>
+                        <a href="#">HTC</a>
+                    </div>
+                    <div>                     
+                        <h3><img src="img/icon-housing-categories.png" alt="Housing">Housing</h3> 
+                        <a href="#">Apartments - For Sale</a>
+                        <a href="#">Hostel</a>
+                        <a href="#">Apartments for rent</a>
+                        <a href="#">Commercial</a>
+                        <a href="#">Homes for rent</a>
+                        <a href="#">Homes for sale</a>
+                        <a href="#">Land</a>
+                        <a href="#">Real estate services</a>
+                        <a href="#">Rooms &amp; roommates</a>
+                        <a href="#">Vacation Rentals</a>
+                                             
+                        <h3><img src="img/icon-cars-vehicles-categories.png" alt="Cars/Vehicles">Cars/Vehicles</h3> 
+                        <a href="#">Buses - Tempos - Trucks</a>
+                        <a href="#">Driving Schools</a>
+                        <a href="#">Motor Service - Repair</a>
+                        <a href="#">Spare Parts - Accessories</a>
+                        <a href="#">Micro Vans</a>
+                        <a href="#">Cars</a>
+                        <a href="#">Jeep</a>
+                                             
+                        <h3><img src="img/icon-bikes-categories.png" alt="Bikes">Bikes</h3> 
+                        <a href="#">Motorcycles</a>
+                        <a href="#">Scooters</a> 
+                    </div>
+                    <div>                     
+                        <h3><img src="img/icon-electronics-categories.png" alt="Electronics">Electronics</h3>
+                        <a href="#">Camera Accessories</a>
+                        <a href="#">Cameras - Digicams</a>
+                        <a href="#">Computer Peripherals</a>
+                        <a href="#">Office Equipment</a>
+                        <a href="#">Inverters, UPS &amp; Generators</a>
+                        <a href="#">IPods, MP3 Players</a>
+                        <a href="#">Laptops - Desktops</a>
+                        <a href="#">Music Systems - Home Theatre</a>
+                                             
+                        <h3><img src="img/icon-community-categories.png" alt="Cars/Community">Community</h3>
+                        <a href="#">Announcements</a>
+                        <a href="#">Charity - Donate - NGO</a>
+                        <a href="#">Artists &amp; musicians</a>
+                        <a href="#">Volunteer</a>
+                                             
+                        <h3><img src="img/icon-pets-categories.png" alt="Pets">Pets</h3>
+                        <a href="#">Animal services</a>
+                        <a href="#">Birds</a>
+                        <a href="#">Cats &amp; kittens</a>
+                        <a href="#">Dogs &amp; puppies</a>
+                        <a href="#">Livestock</a>
+                        <a href="#">Lost &amp; found</a>
+                        <a href="#">Other pets</a>
+                                             
+                        <h3><img src="img/icon-free-stuffs-categories.png" alt="Free stuffs">Free stuffs</h3>
+                        <a href="#">Any Free Stuffs</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+<!-- section end -->
+<!-- footer-top start -->
+
+        <footer class="footer-top">
+            <div class="centralizer clearfix">
+                <div>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="288" data-height="215" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                </div>
+                <div>
+                    <h2>Contact us</h2>
+                    <h3>Image Buy Sell</h3>
+                    <p>
+                        P.O.Box No. 5566, Image Complex<br>
+                        Panipokhari, Kathmandu, Nepal
+                    </p>
+                    <p>
+                        <ins>Support :</ins><br>
+                        <a href="mailto:info@imagebuysell.com">info@imagebuysell.com</a>
+                    </p>
+                    <p>
+                        <ins>Hunting line:</ins>
+                    </p>
+                    <h3>+977 1 4006555</h3>
+                </div>
+                <div>
+                    <h2>Site links</h2>
+                    <p>
+                        <a href="#">Home</a>  &nbsp;/&nbsp;  
+                        <a href="about.php">About us</a> &nbsp;/&nbsp; 
+                        <a href="all-posts.php">All posts</a><br> 
+                        <a href="post-ad.php">Post free add</a> &nbsp;/&nbsp;
+                        <a href="login.php">User login</a>  &nbsp;/&nbsp;  
+                        <a href="register.php">Register</a>
+                    </p>
+                    <p class="social"> 
+                        <a href="http://www.facebook.com/ImageBuySell" target="_blank"><img src="img/icon-facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/icon-twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="img/icon-rss.png" alt="RSS Feed"></a>
+                    </p>
+                    <p class="logos">
+                        <a href="http://imagechannels.com/" target="_blank"><img src="img/logo-imagechannels.png" alt="Image Channels"></a>
+                        <a href="http://greyhound.com.np/" target="_blank"><img src="img/logo-greyhound-electroincs.png" alt="Greyhound Electronics"></a>
+                    </p>
+                </div>
+                <div class="need-help">
+                    <h2>Need help</h2>
+                    <p>
+                        <a href="#">How to sell?</a><br>
+                        <a href="#">How to buy?</a><br>
+                        <a href="#">Safety tips</a><br>
+                        <a href="contact.php">Write us</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+<!--footer-top end  -->
+<!-- footer-last start -->
+
+        <footer class="footer-last">
+            <div class="centralizer">
+            	Copyright © 2013 Image Channel  /  All Rights Reserved  /  <a href="#">Terms &amp; conditions</a>  /  <a href="#">Privacy policy</a>  /  <a href="#top" class="scroll">Go to top</a>                        
+            </div>
+        </footer>
+
+<!-- footer-last end -->
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+         <script>
+            $(document).on("click","#cities-btn",function() {
+                $('.cities1').addClass('cities-active');
+            });
+            $(document).on("click",".cities-active + .categories #cities-btn",function() {
+                $('.cities1').removeClass('cities-active');  
+            });
+         </script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="owl/jquery.min.js"></script>
+        <script src="owl/owl.carousel.js"></script>
+        <script src="owl/owl.carousel.min.js"></script>
+        <script>
+            $('.loaded1-carousel').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:true,
+                navText: [ '', '' ],
+                dots: false,
+                text: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+        </script>
+        <script>
+                $('.loaded2-carousel').owlCarousel({
+                    loop:true,
+                    margin:0,
+                    nav:true,
+                    navText: [ '', '' ],
+                    dots: false,
+                    text: false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                })
+            </script>
+	
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
+
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        
+        
     </body>
 </html>

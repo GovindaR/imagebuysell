@@ -1,0 +1,100 @@
+.btn{
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #252122;
+    background-image: url(../img/gradient-central.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    border: none;
+    font-weight: bold;
+    line-height: 100%;
+    vertical-align: top;
+    height: 26px;
+    display: inline-block;
+    line-height: 25px;
+
+    &-green{
+        background-color: #57933c;
+
+        &:hover{
+            background-color:#fff200;
+            color: #000;
+        }
+    }
+}
+.latest-additions{
+
+    .owl-prev{
+        position: absolute;
+        top: -31px;
+        left: 162px;
+        background-color: #252122;
+       @include nav-btn;
+
+       &::before {
+        background-image: url(../img/arrow-l-white.png);
+        @include nav-btn-before;
+        }
+        &:hover{
+            background-color: #5bac39
+        }
+    }
+
+    .owl-next{
+        position: absolute;
+        top: -31px;
+        left: 184px;
+        background-color: #252122;
+        @include nav-btn;
+
+        &::before {
+            background-image: url(../img/arrow-l-white.png);
+            transform: rotate(180deg);
+            @include nav-btn-before;
+            }
+
+            &:hover{
+                background-color: #5bac39
+            }
+    }
+    
+}
+
+.featured-items{
+
+    .owl-prev{
+        position: absolute;
+        top: -31px;
+        left: 146px;
+        background-color: #59ab36;
+       @include nav-btn;
+
+       &::before {
+        background-image: url(../img/arrow-l-white.png);
+        @include nav-btn-before;
+        }
+        &:hover{
+            background-color: #252122;
+        }
+    }
+
+    .owl-next{
+        position: absolute;
+        top: -31px;
+        left: 168px;
+        background-color: #59ab36;
+        @include nav-btn;
+
+        &::before {
+            background-image: url(../img/arrow-l-white.png);
+            transform: rotate(180deg);
+            @include nav-btn-before;
+            }
+
+            &:hover{
+                background-color: #252122;
+            }
+    }
+}
